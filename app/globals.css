@@ -1,0 +1,47 @@
+@import url("https://websseu.github.io/fontkor/fontkor.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainBg: #EFEEEC;
+
+  --black: #000;
+  --black100: #111;
+  --black200: #444;
+  --black300: #666;
+  --black400: #bbb;
+  --black500: #eee;
+
+  --white: #fff;
+  --white100: #f1f1f1;
+  --white200: #e7e7e7;
+  --white300: #dddddd;
+  --white400: #d1d1d1;
+  --white500: #c7c7c7;
+
+  --fontN: "NanumSquareNeo";
+  --fontX: "NexonLv1Gothic";
+
+  font-family: var(--fontN);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--mainBg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .header {
+    @apply fixed w-full border-b border-black border-b-2 h-12 flex items-center justify-between
+  }
+}
