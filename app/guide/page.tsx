@@ -2,8 +2,8 @@ import React from "react";
 
 export default function GuidePage() {
   return (
-    <main className="mx-auto max-w-screen-2xl min-h-screen mt-[47px] px-8">
-      <div className="fixed h-full w-[260px] border-r">
+    <main className="mx-auto max-w-screen-2xl min-h-screen mt-[47px] px-8 bg-slate-100">
+      <div className="fixed h-full w-[260px]">
         <nav className="p-4">
           <ul className="pt-10">
             <li>
@@ -41,9 +41,9 @@ export default function GuidePage() {
           </ul>
         </nav>
       </div>
-      <div className="ml-[260px] h-full p-10 pt-14">
-        <div className="contents__main relative bg-slate-100">
-          <div className="mr-[300px]">
+      <div className="ml-[260px] h-full p-10 pt-14 bg-slate-200">
+        <div className="contents__main relative">
+          <div className="mr-[300px] bg-red-200">
             <h4 className="text-2xl mb-4">소개</h4>
             <p className="text-black300 leading-7">
               안녕하세요! 웹스토리보이입니다. <br />이 강의는 PHP를 사용하여
@@ -81,8 +81,21 @@ export default function GuidePage() {
             </p>
           </div>
 
-          <div className="contents__right fixed right-[max(0px,calc(50%-51rem))] top-[96px] w-[260px] h-full bg-gray-300">
-            dd
+          <div className="contents__right fixed right-[max(0px,calc(50%-51rem))] top-[96px] w-[260px] h-full bg-slate-300">
+            <h6 className="mb-4">이 페이지에서는</h6>
+            <ul>
+              <li className="text-sm text-slate-700 pb-2">소개</li>
+              <li className="text-sm text-slate-700 pb-2">데이터 저장</li>
+              <li className="text-sm text-slate-700 pb-2 font-bold underline underline-offset-4">
+                데이터 변경하기
+              </li>
+              <li className="text-sm text-slate-700 pb-2">데이터 수정</li>
+              <li className="text-sm text-slate-700 pb-2">자바스크립트</li>
+              <li className="text-sm text-slate-700 pb-2">데이터 변경</li>
+            </ul>
+            <div className="ad mt-10 w-full h-56 bg-slate-500 text-white flex items-center justify-center rounded-md font-light">
+              ad
+            </div>
           </div>
         </div>
       </div>
