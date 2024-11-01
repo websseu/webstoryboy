@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Header from "@/components/Header";
+import Skip from "@/components/Skip";
 
 export const metadata: Metadata = {
   title: "웹스토리보이 : 코딩 지식의 길잡이",
@@ -50,8 +52,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <Analytics />
       <body>
-        <Analytics />
+        <Skip />
+        <Header />
         {children}
       </body>
     </html>
