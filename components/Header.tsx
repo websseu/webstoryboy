@@ -8,11 +8,10 @@ export default function Header() {
   const pathname = usePathname();
 
   const menuItems = [
-    { href: "/about", label: "소개" },
     { href: "/tutorial", label: "튜토리얼" },
+    { href: "/lecture", label: "강의" },
+    { href: "/reference", label: "레퍼런스" },
     { href: "/inspiration", label: "인스퍼레이션" },
-    { href: "/guide", label: "가이드" },
-    { href: "/", label: "피드백" },
   ];
 
   return (

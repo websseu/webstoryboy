@@ -10,7 +10,7 @@ import {
 const tutorialItems = [
   {
     url: "/",
-    imgSrc: "/images/post01.jpg",
+    imgSrc: "/images/post04.jpg",
     imgAlt: "첫 번째 이미지",
     categories: ["CSS", "3D", "GSAP", "Three.js"],
     likes: 1,
@@ -22,38 +22,39 @@ const tutorialItems = [
   },
 ];
 
-export default function TutorialPage() {
+export default function LectruePage() {
   return (
     <section id="tutorial" className="mx-auto max-w-7xl px-4 mt-40">
       <div>
-        <h2 className="text-4xl font-nexon mb-3">튜토리얼</h2>
+        <h2 className="text-4xl font-nexon mb-3">강의</h2>
         <p className="text-black300 leading-7">
-          이 웹사이트는 웹 디자인과 개발을 위한 다양한 튜토리얼을 제공합니다.
-          현재{" "}
+          웹스토리보이가 제공하는 유료 및 무료 강의에 대한 가이드를 제공합니다.
+          현재는 웹디자인개발기능사 2025와 리액트를 위한 자바스크립트 기초
+          마스터 강의가 준비되어 있으며, 유튜브 및 인프런에서 수강할 수
+          있습니다.
           <span className="underline underline-offset-4 cursor-pointer">
-            UI/UX CSS 디자인
-          </span>
-          과{" "}
+            웹디자인개발기능사 2025
+          </span>{" "}
+          강의는 2025년 시험 대비를 위한 실기 내용을 다룹니다. 이 강의는 기초
+          이론에서 실전까지, 시험에 필요한 웹디자인 및 개발 지식을 체계적으로
+          쌓을 수 있도록 돕습니다.
           <span className="underline underline-offset-4 cursor-pointer">
-            GSAP 인터랙티브 애니메이션
-          </span>
-          을 주제로 한 기초 및 심화 학습이 구성되어 있습니다. UI/UX CSS
-          디자인에서는 CSS의 주요 기법과 레이아웃 구성, 속성 활용, 로그인 페이지
-          디자인, CSS 애니메이션, 반응형 디자인, Flexbox, Grid 레이아웃 등
-          실무에서 자주 쓰이는 기술을 다룹니다. GSAP 인터랙티브 애니메이션에서는
-          패럴랙스 기법, JavaScript 애니메이션, GSAP, Framer Motion, 스크롤
-          애니메이션, SVG 애니메이션 등 최신 트렌드의 인터랙티브 효과 구현법을
-          익힐 수 있습니다.
+            리액트를 위한 자바스크립트 기초 마스터
+          </span>{" "}
+          리액트를 본격적으로 배우기 전, 필수 자바스크립트 개념과 기초 문법을
+          이해하도록 설계되었습니다. 이 강의를 통해 리액트 개발에 필요한
+          기본기를 단단히 다질 수 있습니다
         </p>
+        <ul>
+          <li></li>
+        </ul>
+
         <div className="flex gap-1 mt-4">
           <span className="border-black300 border text-black300 rounded-sm text-sm px-2">
-            All
+            웹다자인개발기능사 2025
           </span>
           <span className="border-black300 border text-black300 rounded-sm text-sm px-2">
-            UI/UX CSS Design
-          </span>
-          <span className="border-black300 border text-black300 rounded-sm text-sm px-2">
-            GSAP Interative Animation
+            리액트를 위한, 자바스크립트 기초 마스터
           </span>
         </div>
       </div>
