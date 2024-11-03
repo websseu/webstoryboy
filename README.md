@@ -1,7 +1,7 @@
 # hi
 
-안녕하세요! 웹스토리보이입니다.
-웹과 관련된 정보를 공유하고 강의하는 사이트 입니다.
+Hello! I'm WebStoryBoy.
+This site is dedicated to sharing information and providing tutorials related to the web. Here, you’ll find resources, insights, and lessons to help you dive into web technologies and improve your skills.
 
 ## 튜토리얼
 
