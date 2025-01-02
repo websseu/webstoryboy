@@ -50,9 +50,12 @@ export default function LectruePage() {
         </ul>
 
         <div className="flex gap-1 mt-4">
-          <span className="border-black300 border text-black300 rounded-sm text-sm px-2">
+          <Link
+            href={"lecture/webd2025"}
+            className="border-black300 border text-black300 rounded-sm text-sm px-2 hover:bg-black200 hover:text-white hover:border-black200"
+          >
             웹다자인개발기능사 2025
-          </span>
+          </Link>
           <span className="border-black300 border text-black300 rounded-sm text-sm px-2">
             리액트를 위한, 자바스크립트 기초 마스터
           </span>

@@ -3,9 +3,10 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/Header";
 import Skip from "@/components/Skip";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "웹스토리보이 🇰🇷 WEBSTORYBOY",
+  title: "WEBSTORYBOY 🇰🇷 웹스토리보이 ",
   description:
     "다양한 프로그래밍 언어와 기술을 아우르는 폭넓은 코딩 튜토리얼, 팁, 리소스를 만나보세요. 초급부터 고급까지, 여러분의 코딩 목표 달성을 위한 맞춤형 학습 자료를 제공합니다",
   keywords: [
@@ -57,6 +58,7 @@ export default function RootLayout({
         <Skip />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

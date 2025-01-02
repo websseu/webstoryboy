@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <main>main</main>
+      <main className="min-h-screen">main</main>
     </>
   );
 }
