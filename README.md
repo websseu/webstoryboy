@@ -2,6 +2,8 @@
 
 Comprehensive tutorials on web development, covering React, CSS, JavaScript, and more. Build your skills with interactive guides and projects.
 
+https://webstoryboy.com/
+
 ## vscode-extensions
 
 1.  eslint
@@ -69,7 +71,6 @@ npx shadcn@latest add card
 npx shadcn@latest add toast
 npx shadcn@latest add input
 npx shadcn@latest add carousel
-npm i embla-carousel-autoplay
 npx shadcn@latest add table
 npx shadcn@latest add form
 npx shadcn@latest add dropdown-menu
@@ -83,4 +84,5 @@ npx shadcn@latest add popover
 
 ```
 npx shadcn@latest add button card toast input carousel table form dropdown-menu dialog alert-dialog textarea checkbox progress popover
+npm i embla-carousel-autoplay
 ```
