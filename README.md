@@ -11,7 +11,7 @@ Comprehensive tutorials on web development, covering React, CSS, JavaScript, and
 5.  es7+ react snippets
 6.  pretty typescript errors
 
-## setting json
+## setting.json
 
 ```js
 {
@@ -39,6 +39,8 @@ Comprehensive tutorials on web development, covering React, CSS, JavaScript, and
 3. based on docs at https://react-icons.github.io/react-icons/ run
 4. based on docs at https://zod.dev/ run
 5. based on docs at https://mongoosejs.com/docs/guide.html/ run
+6. based on docs at https://vercel.com/ run
+7. based on docs at https://authjs.dev/ run
 
 ## 01. install
 
