@@ -8,6 +8,7 @@ import {
   SITE_URL,
 } from '@/lib/constants';
 import type React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -60,6 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
+      <Analytics />
       <body className={`${poppins.variable} antialiased`}>{children}</body>
     </html>
   );
