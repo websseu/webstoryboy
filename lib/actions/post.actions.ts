@@ -166,7 +166,7 @@ export async function updatePost(data: z.infer<typeof PostUpdateSchema>) {
     revalidatePath('/admin/posts');
     return {
       success: true,
-      message: '글이 성공적으로 업데이트 되었습니다.',
+      message: '글을 성공적으로 업데이트 되었습니다.',
     };
   } catch (error) {
     return { success: false, message: formatError(error) };

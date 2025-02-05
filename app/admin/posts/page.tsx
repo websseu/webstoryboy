@@ -4,6 +4,10 @@ import { auth } from '@/auth';
 import { redirect } from 'next/navigation';
 import { deletePost, getAllPostsLimit } from '@/lib/actions/post.actions';
 import { Button } from '@/components/ui/button';
+import { IPost } from '@/lib/db/models/post.model';
+import { formatDate } from '@/lib/utils';
+import DeleteDialog from '@/components/alert/delete-dialog';
+import Pagination from '@/components/page/pagination';
 import {
   Table,
   TableHeader,
@@ -12,10 +16,6 @@ import {
   TableBody,
   TableCell,
 } from '@/components/ui/table';
-import { IPost } from '@/lib/db/models/post.model';
-import { formatDate } from '@/lib/utils';
-import DeleteDialog from '@/components/alert/delete-dialog';
-import Pagination from '@/components/page/pagination';
 
 export const metadata: Metadata = {
   title: '글 목록',
@@ -40,11 +40,12 @@ export default async function AdminPostPage(props: {
     }
   );
   return (
-    <section className='post__list max-w-6xl mx-auto'>
+    <section className='max-w-6xl mx-auto'>
       <div>
         <div className='flex items-center justify-center mb-4'>
-          <h2 className='text-xl font-nexon'>글 목록</h2>
-          <span className='small'>{totalPosts}</span>
+          <h2 className='text-xl font-nexon'>
+            글 목록 <span className='small'>{totalPosts}</span>
+          </h2>
         </div>
         <div className='flex justify-end mb-2'>
           <Link href={'/admin/posts/create'}>

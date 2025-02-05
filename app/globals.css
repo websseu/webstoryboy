@@ -242,6 +242,6 @@ pre {
     @apply underline underline-offset-4;
   }
   .small {
-    @apply text-black300 text-[10px] ml-1 align-[16px];
+    @apply text-black300 text-[10px];
   }
 }

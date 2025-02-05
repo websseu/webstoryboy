@@ -36,7 +36,6 @@ const postSchema = new Schema<IPost>(
     },
     isPublished: {
       type: Boolean,
-      required: true,
       default: false,
     },
     author: {
