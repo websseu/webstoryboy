@@ -195,10 +195,6 @@ pre {
 }
 
 @layer components {
-  .circle {
-    @apply w-9 h-9 bg-background rounded-full items-center justify-center ring ring-gray-300/20 hover:ring-gray-300/60 flex cursor-pointer;
-  }
-
   .main__container {
     @apply max-w-6xl mx-auto mt-7 sm:mt-14 p-4 min-h-[40vh];
   }
@@ -229,7 +225,23 @@ pre {
     @apply pr-6;
   }
 
+  .table {
+    @apply font-nanum border-t border-b border-t-zinc-300 border-b-zinc-200 text-muted-foreground;
+  }
+  .table th {
+    @apply text-center;
+  }
+
   .not-found {
     @apply flex items-center flex-col justify-center min-h-[40vh] font-nanum text-center;
+  }
+  .circle {
+    @apply w-9 h-9 bg-background rounded-full items-center justify-center border ring ring-gray-300/20 hover:ring-gray-300/60 flex cursor-pointer;
+  }
+  .uline {
+    @apply underline underline-offset-4;
+  }
+  .small {
+    @apply text-black300 text-[10px] ml-1 align-[16px];
   }
 }

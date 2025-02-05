@@ -12,7 +12,7 @@ const data: Data = {
     { name: 'Overview', href: '/admin/overview' },
     { name: 'Posts', href: '/admin/posts' },
     { name: 'Users', href: '/admin/users' },
-    { name: 'Pages', href: '/admin/web-pages' },
+    { name: 'Reviews', href: '/admin/reviews' },
     { name: 'Settings', href: '/admin/settings' },
   ],
   pageTitle: [

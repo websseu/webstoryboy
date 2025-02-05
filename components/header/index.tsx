@@ -1,18 +1,16 @@
 import Link from 'next/link';
-import { GiMoebiusStar, Gi3dGlasses } from 'react-icons/gi';
+
 import { MdStars } from 'react-icons/md';
 import Menu from './menu';
+import RightButton from './right-button';
+import LeftButton from './left-button';
 
 export default function Header() {
   return (
     <header className='border-b-2 border-black line'>
-      <div className='flex items-center justify-between mx-4'>
+      <div className='flex items-center justify-center mx-4'>
         {/* 왼쪽 아이콘 */}
-        <div className='w-[180px]'>
-          <Link href='/' className='circle'>
-            <GiMoebiusStar size='20' />
-          </Link>
-        </div>
+        <LeftButton />
 
         {/* 가운데 로고 */}
         <div className='md:my-2 my-1 bg-background md:px-4 px-2'>
@@ -27,11 +25,7 @@ export default function Header() {
         </div>
 
         {/* 오른쪽 유저 버튼 */}
-        <div className='w-[180px] flex justify-end'>
-          <Link href='/' className='circle'>
-            <Gi3dGlasses size='20' />
-          </Link>
-        </div>
+        <RightButton />
       </div>
 
       {/* 메뉴 */}
