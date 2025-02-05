@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className='footer__container'>
       <div className='border-t border-black py-10'>
         <h6 className='text-md font-medium font-nexon'>{APP_NAME}</h6>
-        <p className='text-xs mt-1 text-muted-foreground font-medium font-nanum'>
+        <p className='text-xs mt-1 text-muted-foreground font-medium font-nexon'>
           {APP_COPYRIGHT}
         </p>
       </div>

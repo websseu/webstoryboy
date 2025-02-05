@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { GiMoebiusStar, Gi3dGlasses } from 'react-icons/gi';
 import { MdStars } from 'react-icons/md';
+import Menu from './menu';
 
 export default function Header() {
   return (
@@ -32,6 +33,9 @@ export default function Header() {
           </Link>
         </div>
       </div>
+
+      {/* 메뉴 */}
+      <Menu />
     </header>
   );
 }

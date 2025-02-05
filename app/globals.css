@@ -200,10 +200,36 @@ pre {
   }
 
   .main__container {
-    @apply max-w-6xl mx-auto mt-7 sm:mt-14 p-4;
+    @apply max-w-6xl mx-auto mt-7 sm:mt-14 p-4 min-h-[40vh];
   }
 
   .footer__container {
     @apply max-w-6xl mx-auto p-4 mt-20;
+  }
+
+  .header__nav {
+    @apply fixed md:absolute md:bottom-auto bottom-0 w-full md:top-[99px] z-50;
+  }
+  .header__nav ul {
+    @apply flex md:justify-center justify-evenly bg-slate-900/20 backdrop-blur-md md:bg-transparent md:backdrop-blur-0;
+  }
+  .header__nav ul li a {
+    @apply md:bg-background md:py-0 py-3 bg-transparent px-2  text-sm inline-block;
+  }
+  .header__nav ul li a:hover {
+    @apply text-gray-600;
+  }
+  .header__nav ul li.active a {
+    @apply underline underline-offset-4;
+  }
+  .header__nav ul li:first-child a {
+    @apply pl-6;
+  }
+  .header__nav ul li:last-child a {
+    @apply pr-6;
+  }
+
+  .not-found {
+    @apply flex items-center flex-col justify-center min-h-[40vh] font-nanum text-center;
   }
 }
