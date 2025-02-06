@@ -1,30 +1,33 @@
-import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getPostsForCategory } from '@/lib/actions/post.actions';
-import data from '@/lib/data';
 import PageTitle from '@/components/page/page-title';
-import Pagination from '@/components/page/pagination';
+import data from '@/lib/data';
+import React from 'react';
 import Card from '@/components/card/card';
+import Pagination from '@/components/page/pagination';
 
-export const metadata: Metadata = {
-  title: '영감',
-};
-
-export default async function InspirationPage({
+export default async function TutorialSubPage({
+  params,
   searchParams,
 }: {
+  params: Promise<{ sub: string }>;
   searchParams: Promise<{ page?: string }>;
 }) {
-  const pagesTitle = data.pageTitle.find(
-    (page) => page.category === 'inspiration'
-  );
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+
+  const category = 'tutorial';
+  const subCategory = resolvedParams.sub;
+  const currentPage = resolvedSearchParams.page
+    ? parseInt(resolvedSearchParams.page)
+    : 1;
+
+  const pagesTitle = data.pageTitle.find((page) => page.category === category);
   if (!pagesTitle) notFound();
 
-  const resolvedParams = await searchParams;
-  const currentPage = resolvedParams.page ? parseInt(resolvedParams.page) : 1;
-
   const { posts, totalPages, totalPosts } = await getPostsForCategory({
-    category: 'inspiration',
+    category,
+    subCategory,
     limit: 12,
     page: currentPage,
   });
@@ -46,7 +49,7 @@ export default async function InspirationPage({
       <Pagination
         currentPage={currentPage}
         totalPages={totalPages}
-        baseUrl='/lecture'
+        baseUrl='/tutorial'
       />
     </>
   );

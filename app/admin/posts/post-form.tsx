@@ -284,7 +284,7 @@ const PostForm = ({
             name='tags'
             render={({ field }) => (
               <FormItem className='w-full'>
-                <FormLabel>태그</FormLabel>
+                <FormLabel className='font-bold'>태그</FormLabel>
                 <FormControl>
                   <TagInput
                     tags={field.value || []}

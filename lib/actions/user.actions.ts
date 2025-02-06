@@ -72,12 +72,18 @@ export async function registerUser(userSignUp: IUserSignUp) {
       email: userSignUp.email,
       password: userSignUp.password,
       confirmPassword: userSignUp.confirmPassword,
+      image: userSignUp.image,
     });
+
+    const num = Math.floor(Math.random() * 10) + 1;
+    const formattedNum = String(num).padStart(2, '0');
+    const defaultImage = `/face/face${formattedNum}.jpg`;
 
     await connectToDatabase();
     await User.create({
       ...user,
-      password: await bcrypt.hash(user.password, 5),
+      password: await bcrypt.hash(user.password, 10),
+      image: userSignUp.image || defaultImage,
     });
     return { success: true, message: '회원가입이 성공적으로 이루어졌습니다.' };
   } catch (error) {

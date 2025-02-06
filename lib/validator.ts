@@ -96,6 +96,7 @@ export const UserSignInSchema = z.object({
 export const UserSignUpSchema = UserSignInSchema.extend({
   name: UserName,
   confirmPassword: Password,
+  image: z.string().optional(),
 }).refine((data) => data.password === data.confirmPassword, {
   message: '패스워드가 일치하지 않습니다.',
   path: ['confirmPassword'],
